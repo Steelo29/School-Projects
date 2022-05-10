@@ -1,0 +1,67 @@
+while choice ~= 3
+    displayMenu;
+    choice = getChoice;
+    processMenuChoice(choice);
+end
+ 
+ 
+function displayHeader()
+    disp('Unit Converter');
+end
+ 
+ 
+function displayMenu()
+    disp('MENU');
+    disp('Option 1. Convert kg to lb');
+    disp('Option 2. Convert centimeter to feet');
+    disp('Option 3. Exit Program');
+end
+ 
+ 
+function choice = getChoice()
+    choice = input('Enter your choice: ');
+    
+    while choice ~= 1 && choice ~= 2 && choice ~= 3
+        fprintf('Invalid input...');
+        choice = input('Enter your choice: ');
+    end
+end
+ 
+ 
+function processMenuChoice(choice)
+    
+    if choice == 1
+       KgToLb
+    elseif choice == 2
+       
+       CentimeterToFeet; 
+    else
+       
+        disp('Thank you come again!');
+    end
+end
+ 
+ 
+function CentimeterToFeet()
+    cm = input('Enter length in cm: ');
+    while cm <= 0
+        disp('Invalid input');
+        cm = input('Enter length in cm: ');
+    end
+    
+    Inches = cm / 2.54;
+    Feet = floor(Inches / 12);
+    Inches = Inches - Feet*12;
+    fprintf('%.2f cm = %.1f feet %.2f inches\n', cm, Feet, Inches);
+end
+ 
+ 
+function KgToLb()
+    kg = input('Enter the mass in kg: ');
+    while kg <= 0
+        disp('Invalid input');
+        kg = input('Enter the mass in kg: ');
+    end
+    pounds = kg * 2.205;
+    fprintf('%.2f kg = %.2f lb\n', kg, pounds);
+ end
