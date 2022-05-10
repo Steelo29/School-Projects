@@ -1,0 +1,66 @@
+shape = input ('Insert shape:'); %taking shape as input
+%calculating area and the parimeter/circumference of common shapes from given formulas using switch case
+switch shape
+case 'Square'
+s = input(' side :');
+Area = s^2
+Perimeter = 4*s
+case 'Rectangle'
+l = input('length:');
+w = input('width:');
+Area = l*w
+Perimeter = 2*l+2*w
+case 'Triangle'
+b = input('base:');
+h = input('height:');
+c = input('side:');
+Area = 0.5*b*h
+Perimeter = a+b+c
+case 'Circle'
+r = input('radius:');
+d = input('diameter:');
+Area = pi*r^2
+Circumference = 2*pi*r
+case 'Sector of Circle'
+r = input('radius:');
+theta = input('Angle in radians:')
+Area = 0.5*theta*r^2
+ArcLength = theta*r
+case 'Ellipse'
+a = input('semimajor axis:');
+b = input('semiminor axis:');
+Area = pi*a*b
+Circumference = (pi*(3*(a+b) (sqrt((a+3*b)*(b+3*a)))))
+case 'Equilateral Triangle'
+s = input('side:');
+Height = (sqrt(3)/2)*s
+Area = (sqrt(3)/4)*s^2
+case 'Annulus'
+r = input('inner radius:');
+R = input('outer radius:');
+p = 0.5*(r+R)
+w = R-r
+Area = pi*(R^2-r^2);
+Area = 2*pi*p*w
+case 'Parallelogram'
+b = input('base:');
+h = input('height:');
+a = input('side:');
+Area = b*h
+Perimeter = 2*a+2*b
+case 'Regular Polygon'
+s = input('side length:');
+n = input('number of sides:');
+Circumradius = 0.5*s*csc(pi/n)
+Area = (1/4)*n*s^2*cot(pi/n)
+case 'Trapezoid'
+a = input('Top Base:');
+b = input('Bottom Base:');
+h = input('height:');
+c = input('side 1:');
+d = input('side 2:');
+Area = 0.5*(a+b)*h
+Perimeter = a+b+c+d
+otherwise
+disp('Invalid Option')
+end
