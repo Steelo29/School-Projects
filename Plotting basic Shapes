@@ -1,0 +1,44 @@
+clc
+clear
+disp('Select Shape')
+disp('1.Square')
+disp('2.Rectangle')
+disp('3.Circle')
+disp('4.Triangle')
+choice=input('Choose Shape:')
+if choice==1
+disp('Square')
+side = input('side:')
+x = [1 side side 1 1];
+y = [1 1 side side 1];
+plot(x,y)
+xlim = ([1 2 2 1]);
+ylim = ([1 2 2 1]);
+elseif choice==2
+disp('Rectangle')
+length = input('length:')
+width = input('width:')
+x = [1 length length 1 1];
+y = [1 1 width width 1];
+plot(x,y)
+xlim = ([1 2 2 1]);
+ylim = ([1 2 2 1]);
+elseif choice==3
+disp('Circle')
+radius = input('radius:')
+x = -radius:.01:radius;
+y = sqrt(radius^2-x.^2);
+hold on
+plot(x,y)
+plot(x,-y)
+hold off
+elseif choice==4
+disp('Triangle')
+base = input('base:')
+height = input('height:')
+x_1 = [1 1+base 1+base 1];
+y_1 = [1 1+height 1 1];
+plot(x_1,y_1)
+else
+disp('Invalid Shape');
+end
