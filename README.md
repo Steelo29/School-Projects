@@ -1,1 +1,1 @@
-# School-Projects is a portfolio for school projects I have completed
+# School-Projects is a portfolio for school projects I have completed using MATLAB
