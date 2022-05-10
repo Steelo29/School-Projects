@@ -1,0 +1,53 @@
+function CompoundInterest()
+ 
+interest_rate = 0.05;
+ 
+principal = 10000;
+ 
+year = promptYear();
+ 
+PlotInterest(principal, interest_rate, year);
+
+end
+
+
+function outn = promptYear
+ 
+inputnum = input('Enter a positive integer for number of years: ');
+
+num2 = int32(inputnum);
+
+while num2 ~= inputnum || num2 < 0
+
+    inputnum = input('Ivalid, Enter positive integer: ');
+
+
+    num2 = int32(inputnum);
+end
+
+outn = inputnum;
+
+end
+
+
+
+function PlotInterest(principal, interest_rate, year)
+
+amount = [];
+
+for index = 1:year
+    amount_year = principal + principal*interest_rate;
+    
+    amount = [amount amount_year];
+    
+    principal = amount_year;
+    
+end
+ 
+plot(1:year,amount)
+ 
+legend('CI');
+ 
+xlabel('Years');
+ 
+ylabel('Amount Each year');
