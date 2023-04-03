@@ -1,8 +1,11 @@
+%This function will allow you to calculate the compund interest rate
+%INPUTS: interest rate, principal, year
+
 function CompoundInterest()
  
-interest_rate = 0.05;
+interest_rate = input('Enter interest rate: ');
  
-principal = 10000;
+principal = input('Enter principal: ');
  
 year = promptYear();
  
