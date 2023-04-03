@@ -13,4 +13,4 @@ for i = 1:n
   x0 = x1;
 end
 fprintf('The Root is: %f\n',x1)
- fprintf('No of iterations: %d',i)
+fprintf('No of iterations: %d',i)
