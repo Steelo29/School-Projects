@@ -1,3 +1,5 @@
+%This function will approximate the root of a function using the False Position Method
+%INPUTS: lower limit, upper limit, tolerance
 clc;
 clear;
 format long;
