@@ -1,3 +1,4 @@
+%Alternate function to approximate the root of a function using the Fixed Point Method
 clc;
 clear;
 format long;
