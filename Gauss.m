@@ -1,3 +1,4 @@
+%Function to compute a matrix undergoing Gauss elimination
 A = input('Enter your coefficient matrix: ');
 B = input('Enter source vector: ');
 N = length(B);
@@ -16,4 +17,3 @@ for k=N-1:-1:1
   X(k) = (Aug(k,N+1) - Aug(k,k+1:N)*X(k+1:N))/Aug(k,k);
 end
 X
-
