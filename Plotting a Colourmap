@@ -1,7 +1,7 @@
 clc;
 clear;
-mycmap = [1 1 1; 1 0 0; 0 1 0; 0 0 1; 0 0 0];
+mycmap = [1 1 1; 1 0 0; 0 1 0; 0 0 1; 0 0 0]; %areas on the array where you want there to be a colour
 colormap(mycmap);
-b = [4 0 0 4; 0 2 4 0; 0 4 5 0; 4 0 0 3;];
+b = [4 0 0 4; 0 2 4 0; 0 4 5 0; 4 0 0 3;]; %selecting your choice of colours
 image(b)
 set(gca,'visbile','off')
