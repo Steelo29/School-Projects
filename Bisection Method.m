@@ -1,4 +1,5 @@
-%this is program to calculate root of Non linear differential eqn
+%this is program to approximate the root of a Non linear differential eqn 
+%within a specified interval 
 clc;
 clear;
 format long;
