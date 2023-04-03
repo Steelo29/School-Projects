@@ -1,3 +1,5 @@
+%This function approximates an integral and computes the absolute error
+INPUTS: function, lower boundary, upper boundary, no. of subintervals
 function [ap, err] = composite_trap(f, a, b, n)
     % Compute the width of each subinterval
     h = (b-a) / n;
