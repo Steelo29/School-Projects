@@ -1,3 +1,4 @@
+%Function to approximate an integral using the composite trapezoid rule
 function [I] = Trap(f,a,b,n)
 format long
 h = (b-a)/n;
