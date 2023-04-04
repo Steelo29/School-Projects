@@ -1,3 +1,4 @@
+%Approximating an integral using rombergs method
 function [IR] = Rom(f,a,b,ni,lev)
   for i = 1:(lev+1)
     nsub = ni*2^(i-1)
