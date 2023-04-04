@@ -1,3 +1,4 @@
+%This function uses the Gauss Qaudrature method to approimate an integral 
 function [IG] = GaussQ (f,a,b,n)
 format long
   Ci=[
