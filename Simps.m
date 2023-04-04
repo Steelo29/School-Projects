@@ -1,3 +1,4 @@
+% Approximating an intergral using Simpson's 1/3 rule
 function [I] = Simps(f,a,b,n)
   h = (b-a)/n;
   x = a:h:b;
